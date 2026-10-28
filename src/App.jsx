@@ -9,16 +9,26 @@ import Contact from "./Sections/Contact";
 import WorkPage from "./Pages/WorkPage";
 import AboutPage from "./Pages/AboutPage";
 import ConnectPage from "./Pages/ConnectPage";
-
+import Reveal from "./compoents/Reveal";
 function Home() {
   return (
     <>
+    <Reveal threshold={0.05}>
       <Hero />
+    </Reveal>
+    <Reveal threshold={0.05}>
       <Profile />
+    </Reveal>
+    <Reveal threshold={0.05}>
       <Work />
+    </Reveal>
+    <Reveal threshold={0.05}>
       <Stack />
+    </Reveal>
+    <Reveal threshold={0.05}>
       <Contact />
-    </>
+    </Reveal>
+  </>
   );
 }
 
